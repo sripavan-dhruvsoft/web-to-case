@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     <link rel="stylesheet" href="styles.css">
+     <script src="index.js "></script>
+</head>
+<body>
+    <h1>Create Lead</h1>
+    <form action="https://webto.salesforce.com/servlet/servlet.WebToCase?encoding=UTF-8&orgId=00DdL000001s0k0" method="POST" onsubmit="handleSubmit()">
+    
+        <input type=hidden name="orgid" value="00DdL000001s0k0">
+        <input type=hidden name="retURL" value="http://www.google.com">
+        <input type=hidden name="Case_Date__c" class="datefield">
+        
+        <label for="name">Contact Name</label><input  id="name" required="true" maxlength="80" name="name" size="20" type="text" /><br>
+        
+        <label for="email">Email</label><input  id="email" required="true" maxlength="80" name="email" size="20" type="text" /><br>
+        
+        <label for="phone">Phone</label><input  id="phone" required="true" maxlength="40" name="phone" size="20" type="text" /><br>
+        
+        <label for="subject">Subject</label><input  id="subject" required="true" maxlength="80" name="subject" size="20" type="text" /><br>
+        
+        <label for="CaseDate">Case Date</label><input type="date" required="true" class="inputDate"/>
+        
+        <input type="submit" name="submit" class="submit">   
+        
+    </form>
+</body>
+</html>
